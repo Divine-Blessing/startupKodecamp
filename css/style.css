@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* INDEX.HTML */
@@ -67,7 +68,7 @@ nav h1{
 
 /* about.html */
 #abnav{
-    background-color: transparent;
+    background-color: rgba(191, 140, 240, 0.432);
 }
 #about1{
     background-image: url(../img/university-519606_1920.jpg);
@@ -85,43 +86,16 @@ nav h1{
 }
 #about1 img{
     height: 100px;
-}  
-#about1 .wwa{
-    /* backdrop-filter: blur(30px); */
-    background-color: tomato;
-    width: 30%;
-    padding-top: 50px;
+}
+#about1 .one, #about1 .two, #about1 .three{
+    transform: all 0.5s linear 0s;
+}
+#about1 .one:hover, #about1 .two:hover, #about1 .three:hover{
+    cursor: pointer;
     border-radius: 50px;
-}
-#about1 .wwd{
-    background-color: rgb(125, 143, 143);
-    padding-top: 50px;
-    color: white;
-}
-.wwdimg{
-    height: 100px;
-    width: 100px;
-}
-#about1 .wwd p{
-    width: 50%;
-}
-#about1 .whwa{
-    background-color: tomato;
-    width: 30%;
-    height: 350px;
-    padding-top: 50px;
-    border-radius: 50px;
-}
-#about1 .wwdi{
-    background-color: rgb(125, 143, 143);
-    padding-top: 50px;
-    color: rgb(240, 228, 228);
-}
-#about1 .wwdi p{
-    width: 50%;
+    zoom: 90%;
 }
 /* end of about.html */
-
 /* service.html */
 #sfirst{
     background-color: rgb(173, 157, 173);
@@ -137,7 +111,6 @@ nav{
 .cyimg{
     height: 100px;
     width: 200px;
-    /* border-radius: 0 70px 0 70px; */
 }
 #sfirst .item{
     color: rgb(0, 0, 0);
@@ -157,8 +130,6 @@ nav{
     letter-spacing: .5px;
 }
 /* end of services.html */
-
-
 /* contact.html */
 #be h1{
     color: white;
@@ -190,4 +161,262 @@ nav{
 }
 /* end of contact.html */
 
-/* rgb(209, 127, 55) */
+
+/* tablet view */
+@media (max-width: 768px) and (min-width: 430px){
+    /* index.html */
+    #nav{
+        padding-top: 10px;
+        background: rgba(132, 134, 158, 0.247);;
+    }
+    #nav h1{
+        font-size: 25px;
+    }
+    #nav span{
+        font-size: 33px;
+    }
+    #nav ul{
+        font-size: 15px;
+    }
+    #nav li a{
+        padding: 6px;
+    }
+    #hero{
+        background-color: rgba(132, 134, 158, 0.596);
+        height: 100vh;
+    }
+    #hero .heron{
+        height: 450px;
+        padding-bottom: 30px;
+    }
+    #hero h3{
+        font-size: 20px;
+        padding-top: 0;
+    }
+    #hero .right{
+        display: flex;
+        align-items: center;
+    }
+    #hero img{
+        height: 300px;
+    }
+    #hero .design, #hero .design2{
+        display: none;
+    }
+/* service.html */
+    #snav h1{
+        font-size: 20px;
+    }
+    #snav span{
+        font-size: 30px;
+    }
+    #sfirst p{
+        display: none;
+    }
+    #sfirst h6{
+        font-size: 15px;
+    }
+    #sfirst .be{
+        display: none;
+    }
+    #sfirst .see{
+        visibility: visible;
+    }
+    #sfirst .see a{
+        visibility: visible;
+    }
+    /* contact.html */
+    #be h1{
+        font-size: 25px;
+    }
+    #be span{
+        font-size: 33px;
+    }
+    #be ul{
+        font-size: 15px;
+    }
+    #contact1 h6{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+    #contact1 .up{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    #contact1 .up h6{
+        width: 250px;
+        font-size: 20px;
+    }
+    #contact1 .up .icons{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact1 hr{
+        width: 50%;
+    }
+    #contact1 h4{
+        font-size: 13px;
+    }
+
+
+
+} 
+/* end of tablet view */
+
+
+/* mobile view */
+@media (max-width: 375px){
+    /* index.html */
+    #nav{
+        position: absolute;
+    }
+    #nav h1{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    #nav span{
+        font-size: 15px;
+    }
+    #nav ul{
+        width: 250px;
+    }
+    #nav ul a{
+        font-size: 9px;
+        padding: 0 3px;
+        margin: 0 2px;
+    }
+    #hero .heron{
+        width: 100%;
+    }
+    #hero .right,  .design2, .but{
+        display: none;
+    }
+    #hero h3{
+        font-size: 15px;
+        font-weight: 600;
+        width: 100%;
+    }
+    #hero p{
+        font-size: 12px;
+    }
+    #hero hr{
+        width: 150px;
+    }
+    #hero .design{
+        height: 50px;
+    }
+    /* about.html */
+    #abnav h1{
+        font-size: 10px;
+        font-weight: 600;
+    }
+    #abnav span{
+        font-size: 15px;
+    }
+    #abnav ul{
+        width: 250px;
+    }
+    #abnav ul a{
+        font-size: 9px;
+        padding: 0 3px;
+        margin: 0 2px;
+    }
+    #about1 .row{
+        display: flex;
+        flex-direction: column;
+    }
+    #about1 .col{
+        background-color: transparent;
+    }
+    #about1 .one, .two, .three{
+        border-radius: 50px;
+        width: 60%;
+        
+        height: 160px;
+    }
+    #about1 img{
+        display: none;
+    }
+    #about1 h2{
+        font-size: 20px;
+    }
+    #about1 p{
+        font-size: 10px;
+    }
+    /* service.html */
+    #snav h1{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #snav span{
+        font-size: 18px;
+    }
+    #snav ul{
+        width: 250px;
+    }
+    #snav ul a{
+        font-size: 10px;
+        padding: 0 3px;
+        margin: 0 2px;
+    }
+    #sfirst h1{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    #sfirst hr{
+        margin-bottom: 0;
+    }
+    #sfirst p{
+        display: none;
+    }
+    #sfirst .con{
+        height: 250px;
+    }
+    #sfirst .item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+    }
+    #sfirst .be, .sbe{
+        display: none;
+    }
+    #sfirst .see a{
+        visibility: visible;
+    }
+    /* contact.html */
+    #be{
+        position: absolute;
+    }
+    #be h1{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #be span{
+        font-size: 18px;
+    }
+    #be ul{
+        width: 250px;
+    }
+    #be ul a{
+        font-size: 11px;
+        padding: 0 3px;
+        margin: 0 2px;
+    }
+    #contact1 h6{
+        font-size: 20px;
+    }
+    #contact1 hr{
+        width: 80%;
+    }
+    #contact1 h4{
+        font-size: 12px;
+    }
+
+
+}
+/* end of mobile view */
