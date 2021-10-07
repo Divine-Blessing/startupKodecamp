@@ -4,6 +4,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+nav .openMenu,
+#abnav .openMenu,
+#snav .openMenu,
+#be .openMenu{
+    font-size: 1.5rem;    
+    margin: 20px;
+    cursor: pointer;
+    display: none;
+}
+nav .closeMenu,
+#abnav .closeMenu,
+#snav .closeMenu,
+#be .closeMenu{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
 
 /* INDEX.HTML */
 #nav{
@@ -52,7 +69,7 @@ nav h1{
     border-bottom: 3px solid rgb(209, 127, 55);
     height: 100px;
     width: 10%;
-    margin-top: 355px;
+    margin-top: 400px;
 }
 #hero .design2{
     position: absolute;
@@ -162,6 +179,8 @@ nav{
 /* end of contact.html */
 
 
+
+
 /* tablet view */
 @media (max-width: 768px) and (min-width: 430px){
     /* index.html */
@@ -175,11 +194,64 @@ nav{
     #nav span{
         font-size: 33px;
     }
+    nav .mainMenu,
+    #abnav .mainMenu,
+    #snav .mainMenu,
+    #be .mainMenu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .closeMenu,
+    #abnav .closeMenu,
+    #snav .closeMenu,
+    #be .closeMenu{
+        display: block;
+        /* visibility: visible; */
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav .openMenu,
+    #abnav .openMenu,
+    #snav .openMenu,
+    #be .openMenu{
+        display: block;
+        /* visibility: visible; */
+    }
+    #be .openMenu{
+        display: block;
+        color: white;
+    }
+    #be .closeMenu{
+        color: white;
+    }
     #nav ul{
         font-size: 15px;
     }
-    #nav li a{
+    #nav li a,
+    #abnav li a,
+    #snav li a,
+    #be li a{
         padding: 6px;
+        color: white;
+        font-size: 30px;
+    }
+    #nav li a:hover,
+    #abnav li a:hover,
+    #snav li a:hover,
+    #be li a:hover{
+        color: rgb(209, 127, 55);
+        transition: transform 0.5s ease-in;
     }
     #hero{
         background-color: rgba(132, 134, 158, 0.596);
