@@ -4,7 +4,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-nav .openMenu,
+#nav button,
+#snav button,
+#abnav button,
+#be button{
+    display: none;
+}
+/* nav .openMenu,
 #abnav .openMenu,
 #snav .openMenu,
 #be .openMenu{
@@ -20,7 +26,7 @@ nav .closeMenu,
     font-size: 2rem;
     cursor: pointer;
     display: none;
-}
+} */
 
 /* INDEX.HTML */
 #nav{
@@ -188,50 +194,23 @@ nav{
         background: rgba(132, 134, 158, 0.247);
         width: 100%;
     }
+    #nav button,
+    #snav button,
+    #abnav button,
+    #be button{
+        display: block;
+    }
+    #nav .mainMenu,
+    #abnav .mainMenu,
+    #snav .mainMenu,
+    #be .mainMenu{
+        display: none;
+    }
     #nav h1{
         font-size: 25px;
     }
     #nav span{
         font-size: 33px;
-    }
-    nav .mainMenu,
-    #abnav .mainMenu,
-    #snav .mainMenu,
-    #be .mainMenu{
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .closeMenu,
-    #abnav .closeMenu,
-    #snav .closeMenu,
-    #be .closeMenu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
-    nav .openMenu,
-    #abnav .openMenu,
-    #snav .openMenu,
-    #be .openMenu{
-        display: block;
-    }
-    #be .openMenu{
-        display: block;
-        color: white;
-    }
-    #be .closeMenu{
-        color: white;
     }
     #nav ul{
         font-size: 15px;
@@ -242,7 +221,7 @@ nav{
     #be li a{
         padding: 10px;
         color: white;
-        font-size: 30px;
+        font-size: 20px;
     }
     #nav li a:hover,
     #abnav li a:hover,
@@ -330,16 +309,27 @@ nav{
     #contact1 h4{
         font-size: 13px;
     }
-
-
-
 } 
 /* end of tablet view */
+
+
 
 
 /* mobile view */
 @media (max-width: 425px) {
     /* index.html */
+    #nav button,
+    #snav button,
+    #abnav button,
+    #be button{
+        display: block;
+    }
+    #nav .mainMenu,
+    #abnav .mainMenu,
+    #snav .mainMenu,
+    #be .mainMenu{
+        display: none;
+    }
     #nav{
         padding-top: 10px;
         background: rgba(132, 134, 158, 0.247);
@@ -351,50 +341,6 @@ nav{
     #nav span{
         font-size: 33px;
     }
-    #nav .mainMenu,
-    #abnav .mainMenu,
-    #snav .mainMenu,
-    #be .mainMenu{
-        height: 40vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .closeMenu,
-    #abnav .closeMenu,
-    #snav .closeMenu,
-    #be .closeMenu{
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 1rem;
-        color: white;
-        
-    }
-    nav .openMenu,
-    #abnav .openMenu,
-    #snav .openMenu,
-    #be .openMenu{
-        display: block;
-        font-size: 1rem;
-        
-    }
-    #be .openMenu{
-        display: block;
-        color: white;
-    }
-    #be .closeMenu{
-        color: white;
-    }
     #nav ul{
         font-size: 10px;
     }
@@ -404,7 +350,7 @@ nav{
     #be li a{
         padding: 15px  6px;
         color: white;
-        font-size: 45px;
+        font-size: 40px;
     }
     #nav li a:hover,
     #abnav li a:hover,
@@ -412,6 +358,12 @@ nav{
     #be li a:hover{
         color: rgb(209, 127, 55);
         transition: transform 0.5s ease-in;
+    }
+    #nav .nonet a,
+    #abnav .nonet a,
+    #snav .nonet a,
+    #be .nonet a{
+        font-size: 15px;
     }
     #nav{
         position: absolute;
@@ -443,12 +395,16 @@ nav{
         width: 100%;
     }
     #hero p{
-        font-size: 12px;
+        font-size: 15px;
     }
+    /* #hero p span{
+        display: none;
+    } */
     #hero hr{
         width: 150px;
     }
     #hero .design{
+        margin-top: 430px;
         height: 50px;
     }
     /* about.html */
@@ -487,7 +443,11 @@ nav{
         font-size: 20px;
     }
     #about1 p{
-        font-size: 10px;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    #about1 p span{
+        display: none;
     }
     /* service.html */
     #snav h1{
@@ -558,7 +518,10 @@ nav{
         width: 80%;
     }
     #contact1 h4{
-        font-size: 12px;
+        font-size: 15px;
+    }
+    #contact1 h4 span{
+        display: none;
     }
 
 
