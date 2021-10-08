@@ -11,17 +11,48 @@
 </head>
 <body>
     <!-- navbar -->
-    <nav id="nav" class=" navbar navbar-light pt-3 px-5 " >
+    
+    <nav id="nav" class=" navbar n navbar-light pt-3 px-5 " >
         <div class="logo"><a href="./index.html" class="navbar-brand"><h1 class="text-uppercase">od<span>e</span>ozom<span>e</span></h1></a></div>
-        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <!-- <div class="openMenu"><i class="fa fa-bars"></i></div> -->
         <ul class="mainMenu nav px-4 ">
             <li class="nav-item text-capitalize"><a href="./index.html" class="nhead nav-link active navbar-brand ">home</a></li>
             <li class="nav-item text-capitalize"><a href="./about.html" class="nhead nav-link ">about us</a></li>
             <li class="nav-item text-capitalize"><a href="./service.html" class="nhead nav-link ">our sevices</a></li>
             <li class="nav-item text-capitalize"><a href="./contact.html" class="nhead nav-link ">contact us</a></li>
-            <div class="closeMenu"><i class="fas fa-times"></i></div>
+            <!-- <div class="closeMenu"><i class="fas fa-times"></i></div> -->
         </ul>
+
+            <button
+                class="navbar-toggler "
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav nonet">
+                    <li class="text-capitalize">
+                        <a href="./index.html" class="nav-link">home</a>
+                    </li>
+                    <li class="text-capitalize">
+                        <a href="./about.html" class="nav-link">about us</a>
+                    </li>
+                    <li class="text-capitalize">
+                        <a href="./service.html" class="nav-link">our services</a>
+                    </li>
+                    <li class="text-capitalize">
+                        <a href="./contact.html" class="nav-link">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    
     <!-- end of navbar -->
 
 
@@ -33,8 +64,8 @@
             <p class="text-left" style="line-height: 25px;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit 
                 veritatis asperiores omnis recusandae.
-                Dolor a temporibus dignissimos cum, voluptate ullam quisquam reiciendis, 
-                laborum officiis consectetur fuga.
+                Dolor a temporibus <span>dignissimos cum, voluptate ullam quisquam reiciendis, 
+                    laborum officiis consectetur</span> fuga.
             </p>
             <button class="but btn btn-outline-light " ><a href="./contact.html" class="but text-capitalize text-decoration-none text-secondary">contact us</a></button>
         </div>

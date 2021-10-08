@@ -13,19 +13,47 @@
     <!-- navbar -->
     <nav id="abnav" class="navbar navbar-light pt-3 px-5" >
         <div class="logo"><a href="./index.html" class="navbar-brand"><h1 class="text-uppercase">od<span>e</span>ozom<span>e</span></h1></a></div>
-            <div class="openMenu"><i class="fa fa-bars"></i></div>
+            <!-- <div class="openMenu"><i class="fa fa-bars"></i></div> -->
             <ul class="mainMenu nav px-4 ">
                 <li class="nav-item text-capitalize" ><a href="./index.html" class="nhead nav-link" >home</a></li>
                 <li class="nav-item text-capitalize"><a href="./about.html" class="nhead nav-link active navbar-brand">about us</a></li>
                 <li class="nav-item text-capitalize"><a href="./service.html" class="nhead nav-link ">our sevices</a></li>
                 <li class="nav-item text-capitalize"><a href="./contact.html" class="nhead nav-link ">contact us</a></li>
-                <div class="closeMenu"><i class="fas fa-times"></i></div>
+                <!-- <div class="closeMenu"><i class="fas fa-times"></i></div> -->
             </ul>
+
+            <button
+            class="navbar-toggler "
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav nonet">
+                <li class="text-capitalize">
+                    <a href="./index.html" class="nav-link">home</a>
+                </li>
+                <li class="text-capitalize">
+                    <a href="./about.html" class="nav-link">about us</a>
+                </li>
+                <li class="text-capitalize">
+                    <a href="./service.html" class="nav-link">our services</a>
+                </li>
+                <li class="text-capitalize">
+                    <a href="./contact.html" class="nav-link">contact us</a>
+                </li>
+            </ul>
+        </div>
     </nav>
         
     <!-- end of navbar -->
 
-    <section id="about1" class=" vh-100 d-flex align-items-center" style="color: white;">
+    <section id="about1" class=" vh-100 d-flex justify-contents-center align-items-center" style="color: white;">
         <div class="container">
             <div class="row">
 
@@ -34,7 +62,7 @@
                         <h2 class="text-capitalize">who we are </h2>
                         <img src="./img/conference-1886023_1920.jpg" alt="" class="img-fluid">
                         <p class="pt-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. minus reiciendis culpa, ipsum nam corrupti, quidem provident temporibus enim iure accusantium et quibusdam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. minus reiciendis culpa, ipsum nam <span> corrupti, quidem provident temporibus enim iure accusantium et ipsum nam corrupti, quibusdam!</span>
                         </p>
                     </div>
                 </div>
@@ -44,7 +72,7 @@
                         <h2 class="text-capitalize">what we do </h2>
                         <img src="./img/meeting-1015616_1920.jpg" alt="" class="img-fluid">
                         <p class="pt-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. minus reiciendis culpa, ipsum nam corrupti, quidem provident temporibus enim iure accusantium et quibusdam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. minus reiciendis culpa, ipsum nam <span> corrupti, quidem provident temporibus enim iure accusantium et ipsum nam corrupti, quibusdam!</span>
                         </p>
                     </div>
                 </div>
@@ -54,7 +82,7 @@
                         <h2 class="text-capitalize">where we are </h2>
                         <img src="./img/network-1019737_1920.jpg" alt="" class="img-fluid">
                         <p class="pt-2">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. minus reiciendis culpa, ipsum nam corrupti, quidem provident temporibus enim iure accusantium et quibusdam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. minus reiciendis culpa, ipsum nam <span> corrupti, quidem provident temporibus enim iure accusantium et ipsum nam corrupti, quibusdam!</span>
                         </p>
                     </div>
                 </div>

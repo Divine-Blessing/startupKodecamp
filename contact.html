@@ -13,14 +13,42 @@
     <!-- navbar -->
     <nav id="be" class=" navbar navbar-light bg-dark  p-4 px-5" >
         <div class="logo"><a href="./index.html" class="navbar-brand"><h1 class="text-uppercase">od<span>e</span>ozom<span>e</span></h1></a></div>
-        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <!-- <div class="openMenu"><i class="fa fa-bars"></i></div> -->
         <ul class="mainMenu nav px-4 ">
             <li class="nav-item text-capitalize"><a href="./index.html" class="nhead nav-link  ">home</a></li>
             <li class="nav-item text-capitalize"><a href="./about.html" class="nhead nav-link ">about us</a></li>
             <li class="nav-item text-capitalize"><a href="./service.html" class="nhead nav-link ">our sevices</a></li>
             <li class="nav-item text-capitalize"><a href="./contact.html" class="nhead nav-link active navbar-brand ">contact us</a></li>
-            <div class="closeMenu"><i class="fas fa-times"></i></div>
+            <!-- <div class="closeMenu"><i class="fas fa-times"></i></div> -->
         </ul>
+
+        <button
+        class="navbar-toggler "
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#toggleMobileMenu"
+        aria-controls="toggleMobileMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+        <ul class="navbar-nav nonet">
+            <li class="text-capitalize">
+                <a href="./index.html" class="nav-link">home</a>
+            </li>
+            <li class="text-capitalize">
+                <a href="./about.html" class="nav-link">about us</a>
+            </li>
+            <li class="text-capitalize">
+                <a href="./service.html" class="nav-link">our services</a>
+            </li>
+            <li class="text-capitalize">
+                <a href="./contact.html" class="nav-link">contact us</a>
+            </li>
+        </ul>
+    </div>
     </nav>
     <!-- end of navbar -->
 
@@ -46,7 +74,7 @@
                             <div class="visit"><h6 class="display-6 text-capitalize pt-3 mt-4">or visit the office at</h6></div>
                                 <div class="address px-4  mt-3 d-flex ">
                                     <img src="./img/icons8-address-24 (2).png" alt="" class="address mt-3">
-                                    <h4 class="h6ln pt-0 px-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores harum iure soluta ab non nemo nulla quam eum itaque doloremque nam odit.</h4>
+                                    <h4 class="h6ln pt-0 px-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Asperiores harum iure soluta ab non nemo nulla quam eum itaque doloremque</span> nam odit.</h4>
                                 </div>
                         </div>
                     </div>
