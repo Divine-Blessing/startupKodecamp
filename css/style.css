@@ -217,7 +217,11 @@ nav{
     }
     #nav li a,
     #abnav li a,
-    #snav li a,
+    #snav li a{
+        padding: 10px;
+        color: black;
+        font-size: 20px;
+    }
     #be li a{
         padding: 10px;
         color: white;
