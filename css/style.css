@@ -249,6 +249,9 @@ nav{
     #hero p span{
         display: none;
     }
+    #hero button{
+        display: none;
+    }
     #hero .right{
         display: flex;
         align-items: center;
