@@ -246,6 +246,9 @@ nav{
         font-size: 15px;
         padding-top: 0;
     }
+    #hero p span{
+        display: none;
+    }
     #hero .right{
         display: flex;
         align-items: center;
@@ -254,6 +257,9 @@ nav{
         height: 300px;
     }
     #hero .design, #hero .design2{
+        display: none;
+    }
+    #about1 p span{
         display: none;
     }
 /* service.html */
